@@ -14,7 +14,7 @@ public class Runner {
         controller = new PiyasaController();
 
         do{
-//            controller.gui();
+            controller.gui();
 
             System.out.println("Secim: ");
             secim = new Scanner(System.in).nextInt();

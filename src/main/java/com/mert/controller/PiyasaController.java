@@ -65,12 +65,13 @@ public class PiyasaController {
     public void listeleme(){
         List<Unvan> unvanList = unvanService.listeleme();
         List<Maas> maasList = maasService.listeleme();
-//        Map<Long,Integer> mapMaasList = maasList.stream().collect(Collectors.toMap())
+       Map<Long,Integer> mapMaasList = maasList.stream().collect(Collectors.toMap(Maas::getUnvanId,Maas::getMaas));
+
         unvanList.forEach(u ->{
-            Optional<Maas> optionalMaas = maasList.stream().filter(m->m.getUnvanId().equals(u.getId())).findFirst();
+           // Optional<Maas> optionalMaas = maasList.stream().filter(m->m.getUnvanId().equals(u.getId())).findFirst();
             System.out.println("Unvan Programlama Dili: "+ u.getProgramlamaDili());
             System.out.println("Unvan: "+ u.getUnvan());
-            System.out.println("Maaş: " + optionalMaas.get().getMaas() );
+            System.out.println("Maaş: " + mapMaasList.get(u.getId()));
 
         });
     }
