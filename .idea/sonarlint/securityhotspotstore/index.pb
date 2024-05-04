@@ -13,14 +13,6 @@ W
 'src/main/java/com/mert/entity/Maas.java,9/4/94ab4616751ae0bd57d0721661cf8e8c48493826
 a
 1src/main/java/com/mert/utility/RunnerUtility.java,0/1/010a594187b1f82132667caab617fc0e9dd2a40e
-l
-<src/main/java/com/mert/utility/enums/ProgramlamaDilleri.java,1/8/1860fb3aadde0e882e90f105a6b5c2b012ae874c
-_
-/src/main/java/com/mert/utility/enums/Unvan.java,b/2/b23e2c5847ad493ae8a4196cd702179ab51218aa
-a
-1src/main/java/com/mert/utility/enums/Deneyim.java,1/9/1953b2cf18cfc53e4fb25d1428180e4388ca606d
-[
-+src/main/java/com/mert/entity/Personel.java,e/9/e9b4c504e9dc88e403767243c7fc3946e9802641
 f
 6src/main/java/com/mert/repository/UnvanRepository.java,8/c/8cb780b030bb38b216b1622646963eb0bb0e9d95
 e
